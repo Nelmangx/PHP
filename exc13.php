@@ -1,8 +1,7 @@
 <?php //conversor de temperatura
-    //ultilizando valores personalizados. para personalizar ultilize ?a="valor desejado"&b="valor desejado" ?a=20&b=30
-    $n1 = $_GET['a'];
-    $n2 = $_GET['b'];
-    $resultado = $n1 - $n2;""
+    //ultilizando valores personalizados. para personalizar ultilize ?a="valor desejado"&b="valor desejado": ?celsius=20
+    $temperatura_celsius = $_GET['celsius'];
+    $temperatura_fahrenheit = ($temperatura_celsius * 9/5) + 32;
 
-    echo "o resultado da subtração de A = $n1 e B = $n2 é: $resultado.";
+    echo "Sua temperatura em Celsius é: $temperatura_celsius. E sua temperatura em Fahrenheit é: $temperatura_fahrenheit";
 ?>
